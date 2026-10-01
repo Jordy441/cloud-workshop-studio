@@ -2,6 +2,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background: url("images/cloud-workshop-studio-logo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #0b0c10; /* fallback color for dark theme */
+}
+
+
 html, body {
   margin: 0;
   border: 0;
