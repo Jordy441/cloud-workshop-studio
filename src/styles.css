@@ -4,8 +4,8 @@
 
 body {
     background: url("images/cloud-workshop-studio-logo.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-color: #0b0c10; /* fallback color for dark theme */
+    background-size: contain;
+    background-color: #0b0c10; /* fallback dark tone */
 }
 
 
@@ -14,6 +14,13 @@ html, body {
   border: 0;
   padding: 0;
   background-color: #fff;
+}
+.logo {
+    width: 180px; /* increase from 100px or whatever it was */
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 100px;
 }
 
 main {
