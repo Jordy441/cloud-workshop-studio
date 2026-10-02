@@ -16,12 +16,10 @@ html, body {
   background-color: #fff;
 }
 .logo {
-    width: 180px; /* increase from 100px or whatever it was */
-    height: auto;
-    position: absolute;
-    top: 200px;
-    left: 200px;
+  width: 260px;
+  height: 260px;
 }
+
 
 main {
   margin: auto;
