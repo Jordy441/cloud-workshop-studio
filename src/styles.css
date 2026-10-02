@@ -1,33 +1,67 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* --- HEADER CONTAINER --- */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: rgba(15, 23, 42, 0.85); /* deep cloud‑studio tone */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-body {
-    background: url("images/cloud-workshop-studio-logo.jpg") no-repeat center center fixed;
-    background-size: contain;
-    background-color: #0b0c10; /* fallback dark tone */
-}
-
-
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
-}
-.logo {
+/* --- LOGO --- */
+.logo img {
   width: 260px;
   height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
 }
 
-
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+.logo img:hover {
+  transform: scale(1.05);
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+/* --- NAVIGATION --- */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.main-nav a:hover {
+  opacity: 1;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 900px) {
+  .site-header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .logo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .main-nav ul {
+    gap: 20px;
+  }
 }
