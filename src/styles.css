@@ -14,8 +14,18 @@ body {
     background: url("https://copilot.microsoft.com/th/id/BCO.72782eb0-e093-4372-b9df-a32933daec7a.png") 
                 no-repeat center center fixed;
     background-size: cover;
-    background-color: #0f172a; /* fallback */
+    background-color: #0f172a; /* fallback tone */
 }
+
+
+
+
+
+@keyframes pulseGlow {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.05); }
+}
+
 
 
 
