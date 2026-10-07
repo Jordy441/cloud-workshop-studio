@@ -11,10 +11,12 @@ html, body {
 
 /* Background */
 body {
-    background: url("https://scontent.fbhd1-1.fna.fbcdn.net/v/t39.30808-6/839362220_10165779480629042_6594296138291249265_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=p526x296&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GiI3oLOc3pMQ7kNvwHSob4a&_nc_oc=AdrORZ4a2H1PVThnXwa8iEtTJUo32hiN_FCYHHWisuAxA2FCl8jIhzr8jD5Go9WVECxnGCP1wo4zCyX8aflLGfgP&_nc_zt=23&_nc_ht=scontent.fbhd1-1.fna&_nc_gid=DCpP5uD3TpmAfDbdTdRS8Q&_nc_ss=7b2a8&oh=00_AQNM0PNJBtGpjbUqNa1m-WkjcTX8idQ7V1PZY_l-FV5BxA&oe=6ACC593E") no-repeat center center fixed;
-    background-size: cover; /* or contain */
+    background: url("https://copilot.microsoft.com/th/id/BCO.72782eb0-e093-4372-b9df-a32933daec7a.png") 
+                no-repeat center center fixed;
+    background-size: cover;
     background-color: #0f172a; /* fallback */
 }
+
 
 
 
