@@ -30,6 +30,15 @@ html, body {
   z-index: 1000;
 }
 
+body {
+    background-image: url("https://scontent.fbhd1-1.fna.fbcdn.net/v/t39.30808-6/839362220_10165779480629042_6594296138291249265_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=p526x296&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oeePw_ayFhUQ7kNvwEO7apM&_nc_oc=Adr0MO_XEdurFBjtFPGIgnRrCI_34QcrtCKuKSI-tdQKDfmPnisFOL__v6GS7YwABt5jTuDpF8i5SWm_60_VGm6w&_nc_zt=23&_nc_ht=scontent.fbhd1-1.fna&_nc_gid=8erRRNABQWSBcTy6gX-5fA&_nc_ss=7b2a8&oh=00_AQNg7VJ96g423dP2Rb-AY2ko2onIofbVy3L4iRFNJOiwsg&oe=6ACC20FE");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optional: creates a parallax feel */
+}
+
+
 /* --- LOGO --- */
 .logo img {
   width: 260px;
