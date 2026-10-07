@@ -8,6 +8,12 @@ body {
     background-color: #0b0c10; /* fallback dark tone */
 }
 
+.custom-logo {
+    width: 260px;
+    height: auto;
+}
+
+
 
 html, body {
   margin: 0;
