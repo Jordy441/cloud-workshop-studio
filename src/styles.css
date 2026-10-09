@@ -1,119 +1,188 @@
+/* --------------------------------------------------
+   GLOBAL RESET & BASE
+-------------------------------------------------- */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: url("images/cloud-workshop-studio-logo.jpg") no-repeat center center fixed;
-    background-size: contain;
-    background-color: #0b0c10; /* fallback dark tone */
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: #fff;
+    overflow-x: hidden;
 }
 
-
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
 }
 
-/* --- HEADER CONTAINER --- */
+.section-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    margin-top: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 10px auto 20px;
+}
+
+/* Accent bar */
+.accent-bar {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3E64DE, #00aaff);
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* --------------------------------------------------
+   HEADER
+-------------------------------------------------- */
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 40px;
-  background: rgba(15, 23, 42, 0.85); /* deep cloud‑studio tone */
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* --- LOGO --- */
 .logo img {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.25s ease;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 40px rgba(0, 170, 255, 0.4);
+    transition: transform 0.25s ease;
 }
 
 .logo img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-/* --- NAVIGATION --- */
 .main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 32px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 32px;
 }
 
 .main-nav a {
-  text-decoration: none;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #fff;
-  opacity: 0.9;
-  transition: opacity 0.2s ease;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
 }
 
 .main-nav a:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
-/* --- MOBILE --- */
-@media (max-width: 900px) {
-  .site-header {
-    flex-direction: column;
+/* --------------------------------------------------
+   HERO — CINEMATIC CLOUD GRID
+-------------------------------------------------- */
+#hero {
+    position: relative;
+    padding: 160px 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Grid overlay */
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(#1e293b 1px, transparent 1px),
+                      linear-gradient(90deg, #1e293b 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.25;
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    from { transform: translateY(0); }
+    to { transform: translateY(-200px); }
+}
+
+/* Orbs */
+.orb {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+}
+
+.orb-1 {
+    background: #3E64DE;
+    top: -80px;
+    left: 10%;
+}
+
+.orb-2 {
+    background: #ff7b00;
+    bottom: -80px;
+    right: 15%;
+}
+
+/* Hero content */
+.hero-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.line-blue {
+    color: #3E64DE;
+}
+
+.hero-desc {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.hero-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
-  }
-
-  .logo img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .main-nav ul {
-    gap: 20px;
-  }
 }
 
-body {
-  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 40%, #ff7b00 100%);
-  background-attachment: fixed;
-  color: #fff;
-}
-
-/* Optional: subtle glow behind the logo */
-.logo img {
-  box-shadow: 0 0 40px rgba(255, 123, 0, 0.4);
-}
-
-body {
-  background: url("https://scontent.fbhd1-1.fna.fbcdn.net/v/t39.30808-6/809415304_122112827667407019_5904853167301796926_n.jpg?stp=dst-jpg_tt6&cstp=mx380x580&ctp=s380x580&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=c3EttJ0479QQ7kNvwEOJveg&_nc_oc=Adqmkpy3Hnbxf_MKfJwpKwi4RJUjzGaXHEhFX1_8PwjyN8GeKukqs4uQqpalxDOmq9EZyBDcasQq7KR3dUfQnEZm&_nc_zt=23&_nc_ht=scontent.fbhd1-1.fna&_nc_gid=_ZZ-nvyuYPI7NnA74v_NBg&_nc_ss=7b2a8&oh=00_AQN2jqAGPOlEOXw0IndLmve0WqsGbE4uEOvY-0VfvfGPIA&oe=6AC57549") no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #0f172a; /* fallback */
-}
-
-
-
-
-
-
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
-}
-
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
-}
+.btn-primary,
