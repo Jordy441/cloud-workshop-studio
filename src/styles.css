@@ -245,12 +245,13 @@ body {
 .member img.profile-pic {
   width: 150px;
   height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
+  object-fit: cover;      /* keeps the crop clean */
+  border-radius: 8px;     /* subtle rounded corners */
   border: 2px solid var(--accent);
   box-shadow: 0 0 12px rgba(0,0,0,0.45);
   margin-bottom: 0.8rem;
 }
+
 
 .member h3 {
   margin: 0.4rem 0;
