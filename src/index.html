@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">
@@ -16,162 +17,164 @@
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
         <a href="#about">About</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Crafting cloud‑native experiences and bold digital brands.</h1>
-          <p>
-            The Cloud Workshop Studio blends engineering, design, and storytelling
-            to build fast, beautiful, and reliable web experiences.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Start a project</a>
-            <a href="#portfolio" class="btn btn-secondary">View portfolio</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="card">
-            <h2>Studio snapshot</h2>
-            <ul>
-              <li>Cloud‑ready web apps</li>
-              <li>Branding & visual systems</li>
-              <li>Technical consulting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Services</h2>
-        <p class="section-intro">
-          From first sketch to production deployment, we support the full lifecycle
-          of modern digital products.
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Crafting cloud‑native experiences and bold digital brands.</h1>
+        <p>
+          The Cloud Workshop Studio blends engineering, design, and storytelling
+          to build fast, beautiful, and reliable web experiences.
         </p>
-        <div class="grid">
-          <article class="card">
-            <h3>Static & marketing sites</h3>
-            <p>
-              Fast, accessible, and responsive landing pages tailored to your brand
-              and audience.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Cloud architecture & consulting</h3>
-            <p>
-              Guidance on Azure and modern cloud patterns to keep your stack lean,
-              secure, and scalable.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Branding & visual identity</h3>
-            <p>
-              Logos, palettes, and design systems that feel cohesive across web,
-              print, and product.
-            </p>
-          </article>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Start a project</a>
+          <a href="#portfolio" class="btn btn-secondary">View portfolio</a>
         </div>
       </div>
-    </section>
-
-    <section id="portfolio" class="section section-alt">
-      <div class="container">
-        <h2>Selected work</h2>
-        <p class="section-intro">
-          A glimpse into recent projects and experiments from The Cloud Workshop Studio.
-        </p>
-        <div class="grid">
-          <article class="card">
-            <h3>Studio landing page</h3>
-            <p>
-              A cinematic, cloud‑inspired homepage with responsive layout and
-              performance‑first design.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Motorsport engineering hub</h3>
-            <p>
-              Technical content platform with clean typography and data‑driven
-              layouts.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Game dev showcase</h3>
-            <p>
-              Retro‑arcade themed microsite highlighting prototypes, trailers, and
-              dev logs.
-            </p>
-          </article>
+      <div class="hero-visual">
+        <div class="card">
+          <h2>Studio snapshot</h2>
+          <ul>
+            <li>Cloud‑ready web apps</li>
+            <li>Branding & visual systems</li>
+            <li>Technical consulting</li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About the studio</h2>
-        <div class="about-layout">
-          <p>
-            The Cloud Workshop Studio is a small, focused practice dedicated to
-            building thoughtful digital experiences. We sit at the intersection of
-            engineering and design—comfortable in code editors and design tools
-            alike.
-          </p>
-          <p>
-            Whether you need a single landing page or a long‑term partner for your
-            product ecosystem, we bring clarity, calm collaboration, and a bias
-            toward shipping.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p class="section-intro">
-          Ready to explore an idea, brief a project, or just say hello?
-        </p>
-        <div class="contact-layout">
-          <div>
-            <p><strong>Email:</strong> hello@cloudworkshop.studio</p>
-            <p><strong>Location:</strong> Newtownards, Northern Ireland, UK</p>
-          </div>
-          <form class="contact-form">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" />
-            </label>
-            <label>
-              Project details
-              <textarea name="message" rows="4" placeholder="Tell us about your idea"></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary">Send message</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> The Cloud Workshop Studio. All rights reserved.</p>
-      <p class="footer-meta">Built as a static web app—fast, lightweight, and cloud‑ready.</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    // Simple year injection for the footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-intro">
+        From first sketch to production deployment, we support the full lifecycle
+        of modern digital products.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Static & marketing sites</h3>
+          <p>Fast, accessible, and responsive landing pages tailored to your brand.</p>
+        </article>
+        <article class="card">
+          <h3>Cloud architecture & consulting</h3>
+          <p>Guidance on Azure and modern cloud patterns to keep your stack scalable.</p>
+        </article>
+        <article class="card">
+          <h3>Branding & visual identity</h3>
+          <p>Logos, palettes, and design systems that feel cohesive across platforms.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section section-alt">
+    <div class="container">
+      <h2>Selected work</h2>
+      <p class="section-intro">
+        A glimpse into recent projects and experiments from The Cloud Workshop Studio.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Studio landing page</h3>
+          <p>Cinematic, cloud‑inspired homepage with responsive layout.</p>
+        </article>
+        <article class="card">
+          <h3>Motorsport engineering hub</h3>
+          <p>Technical content platform with clean typography and data‑driven layouts.</p>
+        </article>
+        <article class="card">
+          <h3>Game dev showcase</h3>
+          <p>Retro‑arcade themed microsite highlighting prototypes and dev logs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⭐ TEAM SECTION -->
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Team</h2>
+      <p class="section-intro">
+        Meet the people behind The Cloud Workshop Studio — a blend of creativity,
+        engineering, and design expertise.
+      </p>
+
+      <div class="grid team-grid">
+
+        <article class="card member">
+          <img 
+            src="https://scontent.fbhd1-1.fna.fbcdn.net/v/t39.30808-6/806987382_10165706465214042_6986268489869576065_n.jpg?stp=dst-jpg_tt6&cstp=mx527x792&ctp=s527x792&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pdhtBMrrUHEQ7kNvwHg3jko&_nc_oc=Adp6uW3YUGxnaPyVkczfJTT0nuXBCjOM4QCn2WHETseD5xBWHvTDn7pOlW0hFyRTapE6BYpcyFzFg_0mtVRu5sf3&_nc_zt=23&_nc_ht=scontent.fbhd1-1.fna&_nc_gid=ThCx708i6VM0lL5BaHmQWQ&_nc_ss=7b2a8&oh=00_AQNZg8ZxT22bBKnp-WEncFrg_uDXcPG3H2mv7B9mo6jXOA&oe=6ACF348F"
+            alt="Jordan Wright"
+            class="profile-pic"
+          >
+          <h3>Jordan Wright</h3>
+          <p class="muted small">
+            Exam Prep & Advice — Mechanical and Motorsport Engineering background.
+          </p>
+        </article>
+
+        <article class="card member">
+          <img src="john.jpg" alt="John Fairest" class="profile-pic">
+          <h3>John Fairest</h3>
+          <p class="muted small">
+            Senior Consultant — 25 years in IT, AI, WordPress, and AWS.
+          </p>
+        </article>
+
+        <article class="card member">
+          <img src="scott12.jpg" alt="Scott Johnson" class="profile-pic">
+          <h3>Scott Johnson</h3>
+          <p class="muted small">
+            Operations & Gaming Expert — leading studio operations.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About the studio</h2>
+      <div class="about-layout">
+        <p>
+          The Cloud Workshop Studio is a small, focused practice dedicated to
+          building thoughtful digital experiences.
+        </p>
+        <p>
+          Whether you need a single landing page or a long‑term partner, we bring
+          clarity, calm collaboration, and a bias toward shipping.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="section-intro">
+        Ready to explore an idea, brief a project, or just say hello?
+      </p>
+      <div class="contact-layout">
+        <div>
+          <p><strong>Email:</strong> hello@cloudworkshop.studio</p>
+          <p><strong>Location:</strong> Newtownards, Northern Ireland, UK</p>
+        </div>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Project
